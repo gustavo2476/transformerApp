@@ -1,20 +1,347 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
 
+<mat-toolbar color="primary">
+<span>Transfomers</span>
+<span class="spacer"></span>
+<button mat-button [matMenuTriggerFor]="appMenu"><mat-icon>menu</mat-icon>Menu</button>
+</mat-toolbar>
+
+<mat-menu #appMenu="matMenu">
+  <button mat-menu-item> About </button>
+  <button mat-menu-item> Contact </button>
+</mat-menu>
+
+
+<h1 style="padding-top: 30px;">
+  <span><img style="width:40px;height:40px;" src="https://i.pinimg.com/originals/3f/89/3e/3f893e2a42dfe93902a1aa9483f95ee3.png"></span>Autobots<span><img style="width:40px;height:40px;" src="https://i.pinimg.com/originals/3f/89/3e/3f893e2a42dfe93902a1aa9483f95ee3.png"></span>
+  </h1>
+<!--Start Grid-->
+<div class='popup'>
+<div class='box'>
+<h1>Welcome to my App</h1>
+<p class="text-center">
+This is a basic Angular application where I am utilizing Angular Material, Bootstrap and Jquery as well as various CSS effects. Feel free to take a look at more of my work after you're done here.<br> Enjoy!!</p>
+<br/>
+<br/>
+<p>
+<a href='' class='close'>Close</a>
+</p>
+</div>
+</div>
+
+<h3>Main Characters</h3>
+<div class="container">
+  <div class="row">
+<div class="col-md-2">
+    <div class="thumbnail">
+      <figure><a href="http://transformers.wikia.com/wiki/Optimus_Prime_(Primax)">
+        <img src="https://vignette.wikia.nocookie.net/transformers/images/3/37/Optimusg1.jpg/revision/latest?cb=20170218231038">
+        <div class="caption">
+          <p>Optimus Prime</p>
+        </div>
+        </a></figure>
+    </div>
+  </div>       
+  <div class="col-md-2">
+    <div class="thumbnail">
+      <figure><a href="http://transformers.wikia.com/wiki/Bumblebee_(G1)">
+        <img ng-click="myCheck2 = ! myCheck2" src="https://vignette.wikia.nocookie.net/transformers/images/3/36/Bumblebeeg1.jpg/revision/latest?cb=20060306024234">
+        <div class="caption">
+          <p>BumbleBee</p>
+        </div>
+        </a></figure>
+    </div>
+  </div>
+  <div class="col-md-2">
+    <div class="thumbnail">
+      <figure><a href="http://transformers.wikia.com/wiki/Cliffjumper_(G1)">
+        <img src="https://vignette.wikia.nocookie.net/transformers/images/4/46/Cliffjumperg1.jpg/revision/latest?cb=20060428055310">
+        <div class="caption">
+          <p>CliffJumper</p>
+        </div>
+      </a></figure>
+    </div>
+  </div>
+  <div class="col-md-2">
+    <div class="thumbnail">
+      <figure><a href="http://transformers.wikia.com/wiki/Wheeljack_(G1)">
+        <img src="https://vignette.wikia.nocookie.net/transformers/images/6/6b/Wheeljackg1.jpg/revision/latest?cb=20060806160740">
+        <div class="caption">
+          <p>WheelJack</p>
+        </div>
+      </a></figure>
+    </div>
+  </div>
+  <div class="col-md-2">
+    <div class="thumbnail">
+      <figure><a href="http://transformers.wikia.com/wiki/Prowl_(G1)">
+        <img src="https://vignette.wikia.nocookie.net/transformers/images/1/13/Prowlg1.jpg/revision/latest?cb=20060816201112">
+        <div class="caption">
+          <p>Prowl</p>
+        </div>
+      </a></figure>
+    </div>
+  </div>
+  <div class="col-md-2">
+    <div class="thumbnail">
+      <figure><a href="http://transformers.wikia.com/wiki/Jazz_(G1)">
+        <img src="https://vignette.wikia.nocookie.net/transformers/images/c/c7/Jazzg1.jpg/revision/latest/scale-to-width-down/620?cb=20090924090113">
+        <div class="caption">
+          <p>Jazz</p>
+        </div>
+      </a></figure>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-2">
+    <div class="thumbnail">
+      <figure><a href="http://transformers.wikia.com/wiki/Sideswipe_(G1)">
+        <img src="https://vignette.wikia.nocookie.net/transformers/images/5/52/G1Sideswipe_MTMTE.jpg/revision/latest?cb=20080315045555">
+        <div class="caption">
+          <p>SideSwipe</p>
+        </div>
+      </a></figure>
+    </div>
+  </div>  
+  <div class="col-md-2">
+    <div class="thumbnail">
+      <figure><a href="http://transformers.wikia.com/wiki/Ratchet_(G1)">
+        <img src="https://vignette.wikia.nocookie.net/transformers/images/7/7e/Ratchetg1.jpg/revision/latest?cb=20060816201129">
+        <div class="caption">
+          <p>Ratchet</p>
+        </div>
+      </a></figure>
+    </div>
+  </div>
+  <div class="col-md-2">
+    <div class="thumbnail">
+      <figure><a href="http://transformers.wikia.com/wiki/Ironhide_(G1)">
+        <img src="https://vignette.wikia.nocookie.net/transformers/images/2/25/Ironhideg1guido.jpg/revision/latest?cb=20060816201257">
+        <div class="caption">
+          <p>IronHide</p>
+        </div>
+      </a></figure>
+    </div>
+  </div>
+  <div class="col-md-2">
+    <div class="thumbnail">
+      <figure><a href="http://transformers.wikia.com/wiki/Hot_Rod_(G1)">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNK9S1JG1K4TaOEjYa2rJ3iPp0Qvt__VqxCINA90JVN9I7buVJ">
+        <div class="caption">
+          <p>HotRod</p>
+        </div>
+      </a></figure>
+    </div>
+  </div>
+  <div class="col-md-2">
+    <div class="thumbnail">
+      <figure><a href="http://transformers.wikia.com/wiki/Springer_(G1)">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvx62-_vBpUmMj_fADjGxBmA5jWEc-e4TcOIs557oafVQA5wiw">
+        <div class="caption">
+          <p>Springer</p>
+        </div>
+      </a></figure>
+    </div>
+  </div>
+  <div class="col-md-2">
+    <div class="thumbnail">
+      <figure><a href="http://transformers.wikia.com/wiki/Kup">
+        <img src="https://vignette.wikia.nocookie.net/transformers/images/7/7d/Kupg1.jpg/revision/latest?cb=20060826191441">
+        <div class="caption">
+          <p>Kup</p>
+        </div>
+      </a></figure>
+    </div>
+  </div>
+  <div class="col-md-2">
+    <div class="thumbnail">
+      <figure><a href="http://transformers.wikia.com/wiki/Ultra_Magnus_(G1)">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJFQi0tCVvJgcEa-ocy3k7BUuORIaG49rfqgCoDFpTNNzhWPVl">
+        <div class="caption">
+          <p>UltraMagnus</p>
+        </div>
+      </a></figure>
+    </div>
+  </div>
+  <div class="col-md-2">
+    <div class="thumbnail">
+      <figure><a href="http://transformers.wikia.com/wiki/Blurr_(G1)">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShMdAVGhadPovjzktvkiLysaDAqRWQFTux3cShTf-Y8LgRKE-P">
+        <div class="caption">
+          <p>Blurr</p>
+        </div>
+      </a></figure>
+    </div>
+  </div>
+  <div class="col-md-2">
+    <div class="thumbnail">
+      <figure><a href="http://transformers.wikia.com/wiki/Arcee_(G1)">
+        <img src="https://upload.wikimedia.org/wikipedia/en/f/f7/Arcee-dreamwave.jpg">
+        <div class="caption">
+          <p>Arcee</p>
+        </div>
+      </a></figure>
+    </div>
+  </div>
+  <div class="col-md-2">
+    <div class="thumbnail">
+      <figure><a href="http://transformers.wikia.com/wiki/Wheelie_(G1)">
+        <img src="https://i.pinimg.com/originals/8b/4e/44/8b4e4487e756ddea26771acb55d25797.jpg">
+        <div class="caption">
+          <p>Wheelie</p>
+        </div>
+      </a></figure>
+    </div>
+  </div>
+</div>
+
+
+  
+<!--container below-->
+</div>
+
+
+
+<h3>Cars</h3>
+<div class="container">
+  <div class="row">
+    <div class="col-md-2">
+      <div class="thumbnail">
+        <figure><a href="http://transformers.wikia.com/wiki/Hound_(G1)">
+          <img src="https://upload.wikimedia.org/wikipedia/en/6/68/Houndg1.jpg">
+      <div class="caption">
+          <p>Hound</p>
+      </div>
+        </a></figure>
+      </div>
+    </div>
+  <div class="col-md-2">
+    <div class="thumbnail">
+      <figure><a href="http://transformers.wikia.com/wiki/Trailbreaker_(G1)">
+        <img src="https://upload.wikimedia.org/wikipedia/en/2/21/Trailbreaker-dreamwave.jpg">
+        <div class="caption">
+          <p>TrailBreaker</p>
+        </div>
+      </a></figure>
+    </div>
+  </div>
+  <div class="col-md-2">
+    <div class="thumbnail">
+      <figure><a href="http://transformers.wikia.com/wiki/Bluestreak_(G1)">
+        <img src="https://vignette.wikia.nocookie.net/transformers/images/4/48/G1_Bluestreak_boxart.jpg/revision/latest?cb=20080518101852">
+        <div class="caption">
+          <p>Bluestreak</p>
+        </div>
+      </a></figure>
+    </div>
+  </div>
+  <div class="col-md-2">
+    <div class="thumbnail">
+      <figure><a href="http://transformers.wikia.com/wiki/Sunstreaker_(G1)">
+        <img src="https://vignette.wikia.nocookie.net/transformers/images/2/2e/Sunstreakerg1.jpg/revision/latest?cb=20061009005111">
+        <div class="caption">
+          <p>SunStreaker</p>
+        </div>
+      </a></figure>
+    </div>
+  </div>
+  <div class="col-md-2">
+    <div class="thumbnail">
+      <figure><a href="http://transformers.wikia.com/wiki/Mirage_(G1)">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF9I9RxqNs6D9QQZnG02DO-Vx7c4fVnL_uk6ZefciBLzJTE8DQpQ">
+        <div class="caption">
+          <p>Mirage</p>
+        </div>
+      </a></figure>
+    </div>
+  </div>
+  <div class="col-md-2">
+    <div class="thumbnail">
+      <figure><a href="http://transformers.wikia.com/wiki/Tracks_(G1)">
+        <img src="http://tfwiki.net/mediawiki/images2/thumb/6/6b/G1_boxart_Tracks.jpg/474px-G1_boxart_Tracks.jpg">
+        <div class="caption">
+          <p>Tracks</p>
+        </div>
+      </a></figure>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-2">
+    <div class="thumbnail">
+      <figure><a href="http://transformers.wikia.com/wiki/Grapple_(G1)">
+        <img src="https://vignette.wikia.nocookie.net/transformers/images/4/4e/Grapple_G1.jpg/revision/latest?cb=20140511190046">
+        <div class="caption">
+          <p>Grapple</p>
+        </div>
+      </a></figure>
+    </div>
+  </div>  
+  <div class="col-md-2">
+    <div class="thumbnail">
+      <figure><a href="http://transformers.wikia.com/wiki/Red_Alert_(G1)">
+        <img src="https://vignette.wikia.nocookie.net/transformers/images/c/c9/G1RedAlert_MTMTE.jpg/revision/latest?cb=20091127205812">
+        <div class="caption">
+          <p>Red Alert</p>
+        </div>
+      </a></figure>
+    </div>
+  </div>
+  <div class="col-md-2">
+    <div class="thumbnail">
+      <figure><a href="http://transformers.wikia.com/wiki/Smokescreen_(G1)">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGMhdNf2-Qxq3JNAzLII-5n2Ay29f-Wdmug8WCvrkwh_nVbLDv_g">
+        <div class="caption">
+          <p>Smokescreen</p>
+        </div>
+      </a></figure>
+    </div>
+  </div>
+  <div class="col-md-2">
+    <div class="thumbnail">
+      <figure><a href="http://transformers.wikia.com/wiki/Hoist_(G1)">
+        <img src="https://vignette.wikia.nocookie.net/transformers/images/2/2d/G1Hoist_MTMTE.jpg/revision/latest?cb=20070904152902">
+        <div class="caption">
+          <p>Hoist</p>
+        </div>
+      </a></figure>
+    </div>
+  </div>
+  <div class="col-md-2">
+    <div class="thumbnail">
+      <figure><a href="http://transformers.wikia.com/wiki/Inferno_(G1)">
+        <img src="https://vignette.wikia.nocookie.net/transformers/images/5/51/G1Inferno_MTMTE.jpg/revision/latest?cb=20091127205137">
+        <div class="caption">
+          <p>Inferno</p>
+        </div>
+      </a></figure>
+    </div>
+  </div>
+  <div class="col-md-2">
+    <div class="thumbnail">
+      <figure><a href="http://transformers.wikia.com/wiki/Skids_(G1)">
+        <img src="https://vignette.wikia.nocookie.net/transformers/images/6/69/Skidsg1.jpg/revision/latest?cb=20060323061734">
+        <div class="caption">
+          <p>Skids</p>
+        </div>
+      </a></figure>
+    </div>
+  </div>
+</div>
+
+
+  
+<!--container below-->
+</div>
+<footer>
+  <div class="jumbotron">
+    <div class="footer-copyright">
+        <div class="container-fluid">
+            © 2018 Copyright: <a href="https://gustavo2476.carbonmade.com/">Checkout my Portfolio </a>
+
+        </div>
+    </div>
+  </div>
+</footer>
